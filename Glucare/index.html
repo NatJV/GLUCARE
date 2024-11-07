@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Temporary credentials
+        const TEMP_USERNAME = "user";
+        const TEMP_PASSWORD = "password123";
+        const TEMP_TOKEN = "123456";
+
+        function validateLogin(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get input values
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const token = document.getElementById("token").value;
+
+            // Check if the input matches the temporary credentials
+            if (username === TEMP_USERNAME && password === TEMP_PASSWORD && token === TEMP_TOKEN) {
+                // Redirect to dashboard if successful
+                window.location.href = "first_user.html";
+            } else {
+                alert("Invalid credentials. Please try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-section">
+            <h1>Welcome To Glucare</h1>
+            <form onsubmit="validateLogin(event)">
+                <input type="input" id="username" placeholder="Username" required>
+                <input type="input" id="password" placeholder="Password" required>
+                <input type="input" id="token" placeholder="Token" required>
+                <button type="input" class="continue-btn">Sign In</button>
+            </form>
+            <div class="tabs">
+                <button class="continue-btn">Sign Up</button>
+            </div>
+        </div>
+        <div class="image-section">
+            <img class="bg-image" src="Red hair.jpg">
+        </div>
+    </div>
+</body>
+</html>

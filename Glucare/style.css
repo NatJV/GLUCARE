@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #aa1b1b, #ffffff);
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    height: 55vh;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-section {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-section {
+    width: 50%; /* Adjust this width as needed */
+    height: vh; /* Full viewport height */
+    overflow: hidden; /* Hide any overflow if the image is larger */
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tabs {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.tab.active {
+    background-color: #e0e0e0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+input[type="input"] {
+    width: 80%;
+    padding: 0.75rem;
+    margin: 0.55rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.continue-btn {
+    width: 80%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    margin-bottom: 1rem;
+
+    border: 0;
+    border-radius: 100px;
+    color: #ffffff;
+    font-weight: Bold;
+
+}
+
+.continue-btn:hover {
+    background-color: #0056b3;
+}
+

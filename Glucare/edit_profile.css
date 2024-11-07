@@ -1,0 +1,67 @@
+/* Set up the background for the whole page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #cc3333, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: vh;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: flex;
+    width: 80%;
+    text-align: center;
+}
+
+h1 {
+    color: #cc3333;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="number"],
+form input[type="email"],
+form input[type="password"],
+form select {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: b;
+}
+
+.submit-btn {
+    background-color: #cc3333;
+    color: white;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #b32a2a;
+}
