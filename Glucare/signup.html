@@ -3,28 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Multi-Step Form</title>
     <link rel="stylesheet" href="profile.css">
 </head>
 <body>
-    <div class="container">
-        <h1>GLUCARE</h1>
-        <h2>Sign Up</h2>
-        <form>
-            <input type="text" placeholder="Nama" required>
-            <input type="date" placeholder="Tanggal Lahir" required>
-            <input type="" placeholder="Jenis Kelamin" required>
-            <input type="number" placeholder="Tinggi Badan (Cm)" required>
-            <input type="number" placeholder="Berat Badan (Kg)" required>
-            <input type="number" placeholder="Nomor Telepon" required>
-            <input type="email" placeholder="Email" required>
-            <input type="text" placeholder="Alamat" required>
-            <input type="text" placeholder="Wali" required>
-            <input type="number" placeholder="Nomor Telepon Wali" required>
-            <input type="email" placeholder="Email Wali" required>
-            <input type="text" placeholder="Token Alat" required>
-            <button type="submit" class="submit-btn">Submit</button>
-        </form>
-    </div>
+
+<div class="overlay" id="overlay"></div>
+<div class="modal" id="step1">
+    <h2>Step 1: Basic Information</h2>
+    <form>
+        <input type="text" placeholder="Nama" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <input type="text" placeholder="Token Alat" required>
+        <button type="button" class="next-btn" onclick="nextStep(2)">Next</button>
+    </form>
+</div>
+
+<div class="modal" id="step2">
+    <h2>Step 2: Physical Details</h2>
+    <form>
+        <input type="date" placeholder="Tanggal Lahir" required>
+        <select required>
+            <option value="" disabled selected>Jenis Kelamin</option>
+            <option value="laki-laki">Laki-laki</option>
+            <option value="perempuan">Perempuan</option>
+        </select>
+        <input type="number" placeholder="Tinggi Badan (Cm)" required>
+        <input type="number" placeholder="Berat Badan (Kg)" required>
+        <button type="button" class="back-btn" onclick="previousStep(1)">Back</button>
+        <button type="button" class="next-btn" onclick="nextStep(3)">Next</button>
+    </form>
+</div>
+
+<div class="modal" id="step3">
+    <h2>Step 3: Contact Details</h2>
+    <form>
+        <input type="number" placeholder="Nomor Telepon" required>
+        <input type="text" placeholder="Alamat" required>
+        <input type="text" placeholder="Nama Wali" required>
+        <input type="number" placeholder="Nomor Telepon Wali" required>
+        <input type="email" placeholder="Email Wali" required>
+        <button type="button" class="back-btn" onclick="previousStep(2)">Back</button>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
