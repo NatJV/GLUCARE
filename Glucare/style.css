@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    color: #cc3333;
 }
 
 
@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to bottom, #aa1b1b, #ffffff);
+    background: linear-gradient(to bottom, #cc3333, #ffffff);
 }
 
 
@@ -50,7 +50,7 @@ body {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     margin-bottom: 1rem;
 }
 
@@ -86,7 +86,7 @@ input[type="input"] {
     padding: 0.75rem;
     background-color: #007bff;
     margin-bottom: 1rem;
-
+    cursor: pointer;
     border: 0;
     border-radius: 100px;
     color: #ffffff;

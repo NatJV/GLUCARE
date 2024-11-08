@@ -10,18 +10,25 @@
     <div class="container">
         <div class="dashboard-section">
             <div class="header">
-                <h1>GLUCARE</h1>
-                <button class="logout-btn">Logout</button>
+                <div class="title-logo">
+                    <img src="Logo glucare.jpg" alt="Glucare Logo" class="logo">
+                    <h1 class="title-text">GLUCARE</h1>
+                </div>
+                <button class="logout-btn" onclick="logout()">Logout</button>
+                <script>
+                    function logout() {
+                        window.location.href = "index.html"; // Redirects to the login page
+                    }
+                </script>
             </div>
             <div class="welcome">
                 <div class="profile-picture">
-                    <img src="profile-placeholder.jpg" alt="Profile Picture">
+                    <img src="Red hair.jpg" alt="Profile Picture">
                 </div>
                 <h2>Welcome, user</h2>
+                <p class="recent-test">Recent Test : 40mg</p>
                 <div class="actions">
-                    <button class="action-btn">Recent</button>
-                    <button class="action-btn">80mmg</button>
-                    <button class="action-btn">Edit Profile</button>
+                    <button class="action-btn" onclick="window.location.href='edit_profile.html'">Edit Profile</button>
                     <button class="action-btn">Print Result</button>
                 </div>
             </div>
@@ -37,12 +44,22 @@
                     <tbody>
                         <tr>
                             <td>12 Oktober 2024</td>
-                            <td>40mmg</td>
+                            <td>60mg</td>
                             <td>Aman</td>
                         </tr>
                         <tr>
                             <td>12 Oktober 2024</td>
-                            <td>40mmg</td>
+                            <td>40mg</td>
+                            <td>Aman</td>
+                        </tr>
+                        <tr>
+                            <td>12 Oktober 2024</td>
+                            <td>60mg</td>
+                            <td>Aman</td>
+                        </tr>
+                        <tr>
+                            <td>12 Oktober 2024</td>
+                            <td>50mg</td>
                             <td>Aman</td>
                         </tr>
                         <!-- Add more rows as needed -->
